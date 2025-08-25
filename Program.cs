@@ -22,7 +22,30 @@ namespace Linq_assignment
             //{
             //    Console.WriteLine(item);
             //}
-                         
+
+            /* --------------------------------------------------------------*/
+
+
+            //LiNQ - Element Operators 
+
+            //1.
+
+            //var result = (from P in ProductList
+            //              where P.UnitsInStock == 0
+            //              select P).First();
+
+
+            //2.
+
+            //var result = (from P in ProductList
+            //              where P.UnitPrice > 1000
+            //              select P).FirstOrDefault();
+
+            //Console.WriteLine(result);
+
+            /* --------------------------------------------------------------*/
+
+
 
         }
     }
