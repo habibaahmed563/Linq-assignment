@@ -144,6 +144,73 @@ namespace Linq_assignment
             /* --------------------------------------------------------------*/
 
 
+            //LiNQ - Ordering Operators 
+
+            //1. 
+
+            //var result = from P in ProductList
+            //             orderby P.ProductName
+            //             select P;
+            //foreach(var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //2.
+
+            //var result = from P in ProductList
+            //             orderby P.UnitsInStock descending
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //3.
+
+            //string[] Arr = { "Zero", "One", "two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+            //var result = from P in Arr
+            //             orderby P.Length, P
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //4.
+
+            //var result = from P in ProductList
+            //             orderby P.Category, P.UnitPrice descending
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //5.
+
+            //string[] Arr = { "aPPLE", "AbAcUs", "bRaNcH", "BIUeBeRrY", "CIOvEr", "cHeRry" };
+            //var result = from P in Arr
+            //             orderby P.Length, P.ToLower() descending
+            //             select P;
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //6.
+
+            //string[] Arr = { "Zero", "One", "two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
+            //var result = (from P in Arr
+            //              where P.Length > 0 && P[1] == 'i'
+            //              select P).Reverse();
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            /* --------------------------------------------------------------*/
+
         }
     }
 }
