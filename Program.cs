@@ -303,6 +303,55 @@ namespace Linq_assignment
 
             /* --------------------------------------------------------------*/
 
+            #region Partitioning Operators 
+
+            //LiNQ - Partitioning Operators 
+
+            //1.
+
+            //var result = (from C in CustomerList
+            //              where C.City == "Washinton"
+            //              from O in C.Orders
+            //              select O).Take(3);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item.OrderID);
+            //}
+
+            //2.
+            //var result = (from C in CustomerList
+            //              where C.City == "Washinton"
+            //              from O in C.Orders
+            //              select O).Skip(2);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            //3.
+
+            //int[] numbers = { 5, 3, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = (from n in numbers.Select((num, I) => new { num, I })
+            //              select n.num)
+            //             .TakeWhile(x => x >= numbers.ToList().IndexOf(x));
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //4.
+
+            //int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = (from n in numbers
+            //              select n).SkipWhile(n => n % 3 != 0);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            /* --------------------------------------------------------------*/
 
         }
     }
