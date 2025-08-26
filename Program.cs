@@ -211,6 +211,50 @@ namespace Linq_assignment
 
             /* --------------------------------------------------------------*/
 
+            //LINQ - Transformation Operators 
+
+            //1.
+
+            //var result = from P in ProductList
+            //             select P.ProductName;
+            //foreach(var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //2.
+
+            //string[] Words = { "aPPLe", "BlUeBeRrY", "cHeRry" };
+            //var result = from W in Words
+            //             select new
+            //             {
+            //                 UpperCase = W.ToUpper(),
+            //                 LowerCase = W.ToLower()
+            //             };
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine($" UpperCase : {item.UpperCase} , LowerCase : {item.LowerCase}");
+            //}
+
+            //3.
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+
+            //var result = from a in numbersA
+            //             from b in numbersB
+            //             where a < b
+            //             select new { A = a, B = b };
+            //Console.WriteLine("Pairs where a<b");
+            //foreach(var item in result )
+            //{
+            //    Console.WriteLine($" {item.A } is less than {item.B} ");
+            //}
+
+            /* --------------------------------------------------------------*/
+
+
+
+
         }
     }
 }
