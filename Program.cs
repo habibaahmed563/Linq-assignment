@@ -8,6 +8,7 @@ namespace Linq_assignment
     {
         static void Main(string[] args)
         {
+            #region Restriction Operators 
             //LiNQ - Restriction Operators 
 
             //1. 
@@ -23,10 +24,12 @@ namespace Linq_assignment
             //foreach(var item in result )
             //{
             //    Console.WriteLine(item);
-            //}
+            //} 
+            #endregion
 
             /* --------------------------------------------------------------*/
 
+            #region Element Operators
 
             //LiNQ - Element Operators 
 
@@ -43,10 +46,12 @@ namespace Linq_assignment
             //              where P.UnitPrice > 1000
             //              select P).FirstOrDefault();
 
-            //Console.WriteLine(result);
+            //Console.WriteLine(result); 
+            #endregion
 
             /* --------------------------------------------------------------*/
 
+            #region Aggregate Operators 
             //LINQ - Aggregate Operators 
 
             //1.
@@ -139,10 +144,12 @@ namespace Linq_assignment
             //foreach (var item in result)
             //{
             //    Console.WriteLine($"{item.Category} , {item.Avgprice}");
-            //}
+            //} 
+            #endregion
 
             /* --------------------------------------------------------------*/
 
+            #region Ordering Operators 
 
             //LiNQ - Ordering Operators 
 
@@ -207,10 +214,12 @@ namespace Linq_assignment
             //foreach (var item in result)
             //{
             //    Console.WriteLine(item);
-            //}
+            //} 
+            #endregion
 
             /* --------------------------------------------------------------*/
 
+            #region Transformation Operators 
             //LINQ - Transformation Operators 
 
             //1.
@@ -248,11 +257,51 @@ namespace Linq_assignment
             //foreach(var item in result )
             //{
             //    Console.WriteLine($" {item.A } is less than {item.B} ");
-            //}
+            //} 
+            #endregion
 
             /* --------------------------------------------------------------*/
 
+            #region Set Operators 
+            //LiNQ - Set Operators 
 
+            // 1. 
+
+            //var result = (from P in ProductList
+            //              select P.Category).Distinct();
+            //foreach(var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //2.
+
+            //var result01 = from P in ProductList
+            //               select P.ProductName[0];
+            //var result02 = from C in CustomerList
+            //               select C.CustomerName[0];
+            //var result = result01.Union(result02);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //3.
+            //var result = result01.Intersect(result02);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //4.
+            //var result = result01.Except(result02);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //} 
+            #endregion
+
+            /* --------------------------------------------------------------*/
 
 
         }
